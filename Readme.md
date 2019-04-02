@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Нана Кочерженко](https://up.htmlacademy.ru/adaptive/16/user/977795).
-* Наставник: `Неизвестно`.
+* Наставник: Никита Рогатнев.
 
 ---
 
