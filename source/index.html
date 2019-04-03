@@ -5,35 +5,33 @@
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" alt="Логотип магазина Mishka">
+  <div class="page-wrapper">
+    <header class="header">
+      <a class="header__logo">
+        <img class="header__logo-image" alt="Логотип магазина Mishka">
       </a>
-      <nav class="main-nav">
+      <nav class="navigation">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
     </div>
   </header>
-  <main class="page-main">
-    <div class="page-main__wrapper">
-      <section class="основное">
-        <h1 class="основное__title">Милые штуки ручной работы для дома</h1>
-        <ul class="основное__разделы разделы">
-          <li class="разделы__item разделы__item--интерьер">
-            <a href="#">Предметы интерьера</a>
-          </li>
-          <li class="разделы__item разделы__item--toys">
-            <a href="#">Детские игрушки</a>
-          </li>
-        </ul>
-      </div>
+  <main class="main">
+    <section class="content">
+      <h1 class="content__title">Милые штуки ручной работы для дома</h1>
+      <ul class="content__section section">
+        <li class="section__item section__item--interior">
+          <a href="#">Предметы интерьера</a>
+        </li>
+        <li class="разделы__item разделы__item--toys">
+          <a href="#">Детские игрушки</a>
+        </li>
+      </ul>
     </section>
     <article class="hit">
       <h2 class="hit__title">Вязанные корзинки</h2>
       <p>Товар недели</p>
       <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <table class="hit__содержимое">
+      <table class="hit__descriprion">
         <tr>
           <td>Цвет:</td>
           <td>"Тиффани"/серый</td>
@@ -52,7 +50,7 @@
       <a class="hit__button button" href="#">Заказать</a>
     </article>
     <section class="about-shop">
-      <div class="about-shop__info info">
+      <div class="info">
         <h2 class="info__title">Коротко о нас:</h2>
         <ul class="info__list">
           <li class="info__item info__item--eco">Экологически чистые материалы</li>
@@ -62,30 +60,33 @@
           <li class="info__item info__item--support">Поддержка отечественного производителя</li>
           <li class="info__item info__item--present">Поставляется в подарочной упаковке</li>
         </div>
-        <div class="about-shop__отзывы отзывы">
-          <h2>Отзывы</h2>
-          <blockquote>
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-            В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          </blockquote>
-          <a href="#"><strong>Анастасия Красильникова</strong> @misssssiskras</a>
-          <ul>
-            <li>
-              <a href="#">Назад</a>
+        <div class="review">
+          <h2 class-"review__title">Отзывы</h2>
+          <div class="review__list">
+            <blockquote class="review__item">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </blockquote>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <cite class="reviews__author-mail">@misssssiskras</cite>
+          </div>
+          <ul class="reviews__toggles toggles">
+            <li class="toggles__item--prev">
+              <a class="toggles__button button" href="#">Назад</a>
             </li>
-            <li>
-              <a href="#">Вперед</a>
+            <li class="toggles__item--next">
+              <a class="toggles__buton button" href="#">Вперед</a>
             </li>
           </ul>
         </div>
       </section>
-      <section>
-        <h2>Контакты</h2>
-        <table>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__info">
           <tr>
             <td>e-mail:</td>
             <td>
-              <a href=#>info@mimimishkashop.ru</a>
+              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </td>
           </tr>
           <tr>
@@ -99,41 +100,41 @@
             </td>
           </tr>
         </table>
-        <img alt="Схема проезда">
-        <a href="#">Напишите нам</a>
+        <img class="contacts__image" alt="Схема проезда">
+        <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
+    </main>
+    <footer class="footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
+              <img class="social__image" alt="Мы во ВКонтакте">
+              <span class="visually-hidden">Мы во ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ig" href="#">
+              <img class="social__image" alt="Мы в Instagram">
+              <span class="visually-hidden">Мы в Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--tw" href="#">
+              <img class="social__image" alt="Мы во Twitter">
+              <span class="visually-hidden">Мы в Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyrigth copyrigth">
+        <a class="copyrigth__link" href="htmlacademy.com">
+          Разработано <span class="visually-hidden">HTML Academy</span>
+          <img class="copyrigth__image" alt="Логотип HTML Academy">
+        </a>
+      </p>
     </div>
-  </main>
-  <footer>
-    <div>
-      <ul>
-        <li>
-          <a href="#">
-            <img alt="Мы во ВКонтакте">
-            <span>Мы во ВКонтакте</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img alt="Мы в Instagram">
-            <span>Мы в Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img alt="Мы во Twitter">
-            <span>Мы в Twitter</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <a href="htmlacademy.com">
-        Разработано <span>HTML Academy</span>
-        <img alt="Логотип HTML Academy">
-      </a>
-    </p>
-  </div>
-</footer>
+  </footer>
+</div>
 </body>
 </html>
