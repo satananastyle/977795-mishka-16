@@ -5,23 +5,22 @@
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
-  <div class="page-wrapper">
     <header class="header">
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" alt="Логотип магазина Mishka">
       </a>
       <nav class="navigation">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="navigation__toggle" type="button">Открыть меню</button>
       </nav>
       <h1 class="header__title">Вязание на заказ</h1>
     </header>
     <main class="main">
-      <form class="order-form" metod="post" action="https://echo.htmlacademy.ru">
-        <p class="order_intro">
+      <form class="order" metod="post" action="https://echo.htmlacademy.ru">
+        <p class="order__intro">
           Мы будем рады воплотить в жизнь ваши пожелания!
           Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <fieldset class="order_item filter">
+        <fieldset class="order__item filter">
           <legend class="filter__title">Тип</legend>
           <label>
             <input type="radio" name="type-product" value="interior" checked>
@@ -92,7 +91,7 @@
             <textarea rows="6" name="other" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </fieldset>
-        <small class="order_item note">
+        <small class="order__item order__item--note">
           <sup>*</sup>Поля обязательны для заполнения
         </small>
         <button class="order__item button" type="submit">Отправить заказ</button>
@@ -128,6 +127,5 @@
         </a>
       </div>
     </footer>
-  </div>
 </body>
 </html>
