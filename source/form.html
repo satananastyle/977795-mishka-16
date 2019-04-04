@@ -5,16 +5,17 @@
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
-    <header class="header">
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-image" alt="Логотип магазина Mishka">
-      </a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">Открыть меню</button>
-      </nav>
-      <h1 class="header__title">Вязание на заказ</h1>
-    </header>
-    <main class="main">
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img class="header__logo-image" alt="Логотип магазина Mishka">
+    </a>
+    <nav class="navigation">
+      <button class="navigation__toggle" type="button">Открыть меню</button>
+    </nav>
+    <h1 class="header__title">Вязание на заказ</h1>
+  </header>
+  <main class="main">
+    <div class="main__wrapper">
       <form class="order" metod="post" action="https://echo.htmlacademy.ru">
         <p class="order__intro">
           Мы будем рады воплотить в жизнь ваши пожелания!
@@ -96,8 +97,10 @@
         </small>
         <button class="order__item button" type="submit">Отправить заказ</button>
       </form>
-    </main>
-    <footer class="footer">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -126,6 +129,7 @@
           <img class="copyrigth__image" alt="Логотип HTML Academy">
         </a>
       </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 </html>
