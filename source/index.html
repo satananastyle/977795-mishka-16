@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -32,8 +34,8 @@
       <div class="hit__wrapper">
         <h2 class="hit__title">Вязаные корзинки</h2>
         <span class="hit__lider">Товар недели</span>
-        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="hit__descriprion">
+        <p class="hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="hit__characteristic">
           <tr>
             <td>Цвет:</td>
             <td>"Тиффани"/серый</td>
@@ -78,27 +80,28 @@
         </div>
         <ul class="review__toggles">
           <li class="review__button review__button--prev">
-            <a class="review__link button" href="#">Назад</a>
+            <a class="review__link button button--review" href="#">Назад</a>
           </li>
           <li class="review__button review__button--next">
-            <a class="review__link button" href="#">Вперед</a>
+            <a class="review__link button button--review" href="#">Вперед</a>
           </li>
         </ul>
+        <a class="review__item button" href="#">Написать</a>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Контакты</h2>
         <ul class="contacts__list">
-          <li class="contact__item">
+          <li class="contacts__item">
             e-mail:
-            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </li>
-          <li class="contact__item">
+          <li class="contacts__item">
             адрес:
-            <address>
-              г. Санкт-Петербург,
-              ул. Большая Конюшенная,
+            <address class="contacts__address">
+              г. Санкт-Петербург,<br>
+              ул. Большая Конюшенная,<br>
               д. 19/8, офис 101
             </address>
           </li>
@@ -134,7 +137,7 @@
       </div>
       <div class="copyrigth">
         <a class="copyrigth__link" href="htmlacademy.com">
-          Разработано <span class="visually-hidden">HTML Academy</span>
+          Разработано
           <img class="copyrigth__image" alt="Логотип HTML Academy">
         </a>
       </div>

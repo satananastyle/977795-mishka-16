@@ -1,10 +1,22 @@
 
-.font(normal) {
+.font(normal; @font-size: 17px; @line-height: 24px;) {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: normal;
+  font-size: @font-size;
+  line-height: @line-height;
+  font-style: normal;
 }
 
-.font(bold) {
+.font(bold; @font-size: 17px; @line-height: 24px;) {
   font-family: "Open Sans Bold", Arial, sans-serif;
   font-weight: bold;
+  font-size: @font-size;
+  line-height: @line-height;
+  font-style: normal;
+}
+
+.list-style() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
