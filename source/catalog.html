@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -12,24 +15,29 @@
     <nav class="navigation">
       <button class="navigation__toggle" type="button">Открыть меню</button>
     </nav>
-    <h1 class="header__title">Каталог товаров</h1>
   </header>
   <main class="main">
+    <div class="main__item">
+      <h1 class="main__title">Каталог товаров</h1>
+    </div>
     <section class="catalog">
       <div class="catalog__wrapper">
         <article class="catalog__item product">
           <img class="product__image" alt="Вязаный зайчик">
-          <h2 class="product__title">
-            <a class="product__link">Зайчик попрыгайчик</a>
-          </h2>
-          <p class="product__descriprion">Рост 30 см, вес 200 г</p>
-          <span class="product__summ">1200 руб.</span>
-          <a class="product__button" href="#">
-            <span class="visually-hidden">Заказать</span>
-          </a>
+          <div class="product__wrapper">
+            <h2 class="product__title">
+              <a class="product__link">Зайчик попрыгайчик</a>
+            </h2>
+            <p class="product__descriprion">Рост 30 см, вес 200 г</p>
+            <span class="product__summ">1200 руб.</span>
+            <a class="product__button" href="#">
+              <span class="visually-hidden">Заказать</span>
+            </a>
+          </div>
         </article>
         <article class="product__item product">
           <img class="product__image" alt="Вязаная корзинка с бельем">
+          <div class="product__wrapper">
           <h2 class="product__title">
             <a class="product__link">Корзинка для белья</a>
           </h2>
@@ -38,30 +46,37 @@
           <a class="product__button" href="#">
             <span class="visually-hidden">Заказать</span>
           </a>
+          </div>
         </article>
         <article class="product__item product">
           <img class="product__image" alt="Вязаная корзинка с игрушками">
+          <div class="product__wrapper">
           <h2 class="product__title">
-            <a class="product__link">Большая корзина для игруше</a>
+            <a class="product__link">Большая корзина для игрушек</a>
           </h2>
           <p class="product__descriprion">Диаметр 30 см, высота 30 см</p>
           <span class="product__summ">1500 руб.</span>
           <a class="product__button" href="#">
             <span class="visually-hidden">Заказать</span>
           </a>
+          </div>
         </article>
       </div>
     </section>
     <section class="making">
       <div class="making__wrapper">
-        <h2 class="making__title">Процесс производства</h2>
-        <div class="making__video">
-          <img class="making__image">
+        <div class="making__item  making__item--title">
+          <h2 class="making__title">Процесс производства</h2>
         </div>
-        <p class="making__descriprion">
+        <div class="making__video">
+        <img class="making__image" alt="Здесь должно быть видео с производства">
+      </div>
+        <div class="making__item making__item--description">
+          <p class="making__descriprion">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
         <a class="making__button button" href="form.html">Сделать заказ</a>
+      </div>
       </div>
     </section>
   </main>
@@ -91,7 +106,7 @@
       </div>
       <div class="copyrigth">
         <a class="copyrigth__link" href="htmlacademy.com">
-          Разработано <span class="visually-hidden">HTML Academy</span>
+          Разработано
           <img class="copyrigth__image" alt="Логотип HTML Academy">
         </a>
       </div>

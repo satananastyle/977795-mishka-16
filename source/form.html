@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -12,9 +15,11 @@
     <nav class="navigation">
       <button class="navigation__toggle" type="button">Открыть меню</button>
     </nav>
-    <h1 class="header__title">Вязание на заказ</h1>
   </header>
   <main class="main">
+    <div class="main__item">
+      <h1 class="main__title">Вязание на заказ</h1>
+    </div>
     <div class="main__wrapper">
       <form class="order" metod="post" action="https://echo.htmlacademy.ru">
         <p class="order__intro">
@@ -23,79 +28,85 @@
         </p>
         <fieldset class="order__item filter">
           <legend class="filter__title">Тип</legend>
-          <label>
+          <label class="filter__label filter__label--radio">
             <input type="radio" name="type-product" value="interior" checked>
             Аксессуар для интерьера
           </label>
-          <label>
+          <label class="filter__label filter__label--radio">
             <input type="radio" name="type-product" value="toys">
             Детская игрушка
           </label>
         </fieldset>
         <fieldset class="order__item filter">
           <legend class="filter__title">Цвет</legend>
-          <label>
+          <label class="filter__label filter__label--checkbox">
             <input type="checkbox" name="white">
             Белый
           </label>
-          <label>
+          <label class="filter__label filter__label--checkbox">
             <input type="checkbox" name="gray">
             Серый
           </label>
-          <label>
+          <label class="filter__label filter__label--checkbox">
             <input type="checkbox" name="tiffany">
             "Тиффани"
           </label>
-          <label>
+          <label class="filter__label filter__label--checkbox">
             <input type="checkbox" name="black">
             Черный
           </label>
-          <label>
+          <label class="filter__label filter__label--checkbox">
             <input type="checkbox" name="pink">
             Розовый
           </label>
-          <label>
+          <label class="filter__label filter__label--checkbox">
             <input type="checkbox" name="orange">
             Оранжевый
           </label>
         </fieldset>
         <fieldset class="order__item filter">
           <legend class="filter__title">Фио</legend>
-          <label>
+          <label class="filter__label">
             Имя:
-            <input type="text" name="first-name" placeholder="Введите ваше имя*">
+            <p class="filter__wrapper">
+              <input class="filter__input" type="text" name="first-name" placeholder="Введите ваше имя*">
+            </p>
           </label>
-          <label>
+          <label class="filter__label">
             Фамилия:
-            <input type="text" name="family" placeholder="Укажите фамилию*">
+            <p class="filter__wrapper">
+              <input class="filter__input" type="text" name="family" placeholder="Укажите фамилию*">
+            </p>
           </label>
-          <label>
+          <label class="filter__label">
             Отчество:
-            <input type="text" name="surname" placeholder="Отчество, если желаете*">
+            <p class="filter__wrapper">
+              <input class="filter__input" type="text" name="surname" placeholder="Отчество, если желаете*">
+            </p>
           </label>
         </fieldset>
         <fieldset class="order__item filter">
           <legend class="filter__title">Телефон</legend>
-          <label>
-            <input type="tel" name="phone" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 xxx xxx xx xx*">
+          <label class="filter__label">
+            <input class="filter__input" type="tel" name="phone" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 xxx xxx xx xx*">
           </label>
         </fieldset>
         <fieldset class="order__item filter">
           <legend class="filter__title">E-mail</legend>
-          <label>
-            <input type="email" name="email" placeholder="Ваш Email*">
+          <label class="filter__label">
+            <input class="filter__input" type="email" name="email" placeholder="Ваш Email*">
           </label>
         </fieldset>
-        <fieldset class="order__item filter">
+        <fieldset class="order__item order__item--last filter">
           <legend class="filter__title">Доп</legend>
-          <label>
-            <textarea rows="6" name="other" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <label class="filter__label filter__label--textarea">
+            <textarea class="filter__textarea" rows="6" name="other" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </fieldset>
         <small class="order__item order__item--note">
-          <sup>*</sup>Поля обязательны для заполнения
+          <p class="order__note"><sup>*</sup>Поля обязательны для заполнения</p>
         </small>
-        <button class="order__item button" type="submit">Отправить заказ</button>
+        <button class="order__button button" type="submit">Отправить заказ</button>
       </form>
     </div>
   </main>
@@ -125,7 +136,7 @@
       </div>
       <div class="copyrigth">
         <a class="copyrigth__link" href="htmlacademy.com">
-          Разработано <span class="visually-hidden">HTML Academy</span>
+          Разработано
           <img class="copyrigth__image" alt="Логотип HTML Academy">
         </a>
       </div>
