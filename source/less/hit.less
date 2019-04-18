@@ -1,4 +1,6 @@
 .hit {
+  position: relative;
+
   background-color: #ffffff;
   .font(normal; 15px; 24px);
 }
@@ -32,6 +34,8 @@
   margin-bottom: 29px;
   padding: 0;
 
+  width: 100%;
+
   font-size: 15px;
   line-height: 20px;
 }
@@ -53,4 +57,93 @@
 
 .hit__button {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .hit {
+    .font(normal; 17px; 30px);
+  }
+
+  .hit__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .hit__title {
+    .font(bold; 43px; 50px);
+  }
+
+  .hit__lider {
+    position: absolute;
+    top: 41px;
+    right: 78px;
+
+    width: 72px;
+
+    .font(bold; 17px; 17px);
+  }
+
+  .hit__description {
+    margin-right: 44px;
+
+    width: 50%;
+  }
+
+  .hit__characteristic {
+    margin-right: 44px;
+
+    width: 50%;
+  }
+
+  .hit__image {
+    position: absolute;
+    top: 90px;
+    right: 50px;
+  }
+
+  .hit__summ {
+    margin-right: 44px;
+
+    width: 50%;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hit__button {
+    margin-right: 44px;
+
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hit__wrapper {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+
+  .hit__title {
+    .font(bold; 53px; 57px);
+  }
+
+  .hit__lider {
+    position: absolute;
+    top: 41px;
+    left: 98px;
+  }
+
+  .hit__description {
+    margin-right: 58px;
+  }
+
+  .hit__image {
+    position: absolute;
+    top: 71px;
+    right: 50px;
+  }
+
+  .hit__button {
+    margin-right: 58px;
+  }
 }
