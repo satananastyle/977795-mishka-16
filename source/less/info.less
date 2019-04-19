@@ -22,3 +22,57 @@
   padding-top: 57px;
   padding-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .info {
+    .font(bold; 20px; 22px);
+  }
+
+  .info__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .info__title {
+    .font(bold; 43px; 50px);
+  }
+
+  .info__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info__item {
+    width: 50%;
+    &--eco{
+      order: 0;
+    }
+
+    &--handmade {
+      order: 1;
+    }
+
+    &--money {
+      order: 2;
+    }
+
+    &--support {
+      order: 3;
+    }
+
+    &--like {
+      order: 4;
+    }
+
+    &--present {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+    .info__wrapper {
+      padding-left: 225px;
+      padding-right: 225px;
+    }
+}
