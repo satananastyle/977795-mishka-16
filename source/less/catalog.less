@@ -2,3 +2,17 @@
   padding: 30px 30px 0;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -37,8 +37,9 @@
             Детская игрушка
           </label>
         </fieldset>
-        <fieldset class="order__item filter">
+        <fieldset class="order__item filter filter--gray">
           <legend class="filter__title">Цвет</legend>
+          <div class="filter__color">
           <label class="filter__label filter__label--checkbox">
             <input type="checkbox" name="white">
             Белый
@@ -63,35 +64,36 @@
             <input type="checkbox" name="orange">
             Оранжевый
           </label>
+        </div>
         </fieldset>
         <fieldset class="order__item filter">
           <legend class="filter__title">Фио</legend>
-          <label class="filter__label">
+          <label class="filter__label filter__label--person">
             Имя:
             <p class="filter__wrapper">
               <input class="filter__input" type="text" name="first-name" placeholder="Введите ваше имя*">
             </p>
           </label>
-          <label class="filter__label">
+          <label class="filter__label filter__label--person">
             Фамилия:
             <p class="filter__wrapper">
               <input class="filter__input" type="text" name="family" placeholder="Укажите фамилию*">
             </p>
           </label>
-          <label class="filter__label">
+          <label class="filter__label filter__label--person">
             Отчество:
             <p class="filter__wrapper">
               <input class="filter__input" type="text" name="surname" placeholder="Отчество, если желаете*">
             </p>
           </label>
         </fieldset>
-        <fieldset class="order__item filter">
+        <fieldset class="order__item filter filter--gray">
           <legend class="filter__title">Телефон</legend>
           <label class="filter__label">
             <input class="filter__input" type="tel" name="phone" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 xxx xxx xx xx*">
           </label>
         </fieldset>
-        <fieldset class="order__item filter">
+        <fieldset class="order__item filter filter--gray">
           <legend class="filter__title">E-mail</legend>
           <label class="filter__label">
             <input class="filter__input" type="email" name="email" placeholder="Ваш Email*">
@@ -134,10 +136,10 @@
           </li>
         </ul>
       </div>
-      <div class="copyrigth">
-        <a class="copyrigth__link" href="htmlacademy.com">
+      <div class="copyright">
+        <a class="copyright__link" href="htmlacademy.com">
           Разработано
-          <img class="copyrigth__image" alt="Логотип HTML Academy">
+          <img class="copyright__image" alt="Логотип HTML Academy">
         </a>
       </div>
     </div>

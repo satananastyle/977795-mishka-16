@@ -22,3 +22,54 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .order {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .order__intro {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .font(normal; 17px; 30px);
+  }
+
+  .order__item {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &--note{
+      margin-left: auto;
+
+      order: 2;
+
+      .font(normal; 17px; 30px);
+    }
+  }
+
+  .order__button {
+    margin-left: 50px;
+
+    width: 30%;
+
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order__intro {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+
+  .order__button {
+    margin-left: 225px;
+  }
+
+  .order__item {
+    padding-right: 225px;
+  }
+}
