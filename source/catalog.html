@@ -9,12 +9,43 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" alt="Логотип магазина Mishka">
+    <a class="logo logo--header">
+      <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип магазина Mishka">
     </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">Открыть меню</button>
+    <button class="header__toggle" type="button">Открыть меню</button>
+    <nav class="navigation navigation--main">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
     </nav>
+    <nav class="navigation navigation--popular">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--popular" href="#">Новые поступления</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--popular" href="#">Распродажа</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="navigation navigation--user">
+      <ul class="navigation__list navigation__list--user">
+        <li class="navigation__item navigation__item--search">
+          <a class="navigation__link navigation__link--search" href="#">Поиск по сайту</a>
+        </li>
+        <li class="navigation__item navigation__item--basket">
+          <a class="navigation__link navigation__link--basket" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="delivery">
+      <p class="delivery__description">Бесплатная доставка по России</p>
+    </div>
   </header>
   <main class="main">
     <div class="main__item">

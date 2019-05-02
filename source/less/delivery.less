@@ -1,0 +1,35 @@
+.delivery {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .delivery {
+    display: block;
+
+    width: 50%;
+
+    background-color: #f9f9f9;
+  }
+
+  .delivery__description {
+    display: inline-block;
+    padding: 30px 0 30px 76px;
+    margin: 0;
+
+    .font(normal; 15px; 24px;);
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .delivery__description {
+    padding: 30px 0 30px 293px;
+    margin: 0;
+    text-align: right;
+
+    .font(normal; 15px; 24px;);
+    color: #000000;
+    text-decoration: none;
+  }
+}
