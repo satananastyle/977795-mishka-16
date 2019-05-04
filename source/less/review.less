@@ -3,7 +3,9 @@
 }
 
 .review__wrapper {
-  padding: 30px 30px 48px;
+  width: 81%;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
 .review__title {
@@ -60,8 +62,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 668px;
   }
 
   .review__title {
@@ -80,8 +81,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .review{
+    background-image: none;
+  }
+
   .review__wrapper {
-    padding-left: 225px;
+    width: 1050px;
+    padding-left: 175px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .review__title {
