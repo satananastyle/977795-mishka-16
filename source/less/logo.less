@@ -1,5 +1,9 @@
 .logo {
-  margin-left: 117px;
+  margin: 0 auto;
+
+  &--header {
+    margin-top: 20px;
+  }
 
   &--footer {
     display: none;
@@ -39,6 +43,8 @@
 @media (min-width: @desktop-width) {
   .logo {
     &--header {
+      margin-top: 10px;
+
       order: -1;
     }
   }
