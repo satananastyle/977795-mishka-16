@@ -9,7 +9,7 @@
 }
 
 .content__wrapper {
-  padding-top: 72px;
+  padding-top: 75px;
 }
 
 .content__title {
@@ -46,16 +46,54 @@
 }
 
 @media (min-width: @tablet-width) {
+  .content {
+    margin-top: -65px;
+
+    background-image: url("../img/hero-tablet@1x.jpg");
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .content__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    padding-top: 162px;
+  }
+
+  .content__title {
+    margin: 0 auto 377px;
+
+    width: 495px;
+
+    .font(bold; 43px; 50px);
+  }
+
   .content__list {
     display: flex;
   }
 
-  .content__wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
   .content__item {
     width: 50%;
+  }
+
+  .content__link {
+    .font(bold; 20px; 30px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content {
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
+
+  .content__wrapper {
+    width: 1050px;
+    padding-top: 162px;
+  }
+
+  .content__title {
+
+    width: 605px;
+
+    .font(bold; 53px; 57px);
   }
 }

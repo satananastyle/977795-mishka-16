@@ -4,7 +4,10 @@
 }
 
 .hit__wrapper {
-  padding: 30px 30px 39px;
+  position: relative;
+  width: 81%;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .hit__title {
@@ -32,6 +35,8 @@
   margin-bottom: 29px;
   padding: 0;
 
+  width: 100%;
+
   font-size: 15px;
   line-height: 20px;
 }
@@ -53,4 +58,95 @@
 
 .hit__button {
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .hit {
+    .font(normal; 17px; 30px);
+  }
+
+  .hit__wrapper {
+    width: 668px;
+    padding-top: 50px;
+  }
+
+  .hit__title {
+    .font(bold; 43px; 50px);
+  }
+
+  .hit__lider {
+    position: absolute;
+    top: 61px;
+    right: 0;
+
+    width: 72px;
+
+    .font(bold; 17px; 17px);
+  }
+
+  .hit__description {
+    margin-right: 44px;
+
+    width: 50%;
+  }
+
+  .hit__characteristic {
+    margin-right: 44px;
+
+    width: 50%;
+  }
+
+  .hit__image {
+    position: absolute;
+    top: 90px;
+    right: 50px;
+  }
+
+  .hit__summ {
+    margin-right: 44px;
+
+    width: 50%;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hit__button {
+    margin-right: 44px;
+
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hit__wrapper {
+    width: 700px;
+    padding-top: 130px;
+  }
+
+  .hit__title {
+    .font(bold; 53px; 57px);
+  }
+
+  .hit__lider {
+    position: absolute;
+    top: 140px;
+    left: -130px;
+  }
+
+  .hit__description {
+    margin-right: 58px;
+  }
+
+  .hit__image {
+    position: absolute;
+    top: 70px;
+    right: -175px;
+
+    width: 50%;
+  }
+
+  .hit__button {
+    margin-right: 58px;
+  }
 }

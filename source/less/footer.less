@@ -3,6 +3,26 @@
 }
 
 .footer__wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 81%;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 668px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 1050px;
+  }
 }

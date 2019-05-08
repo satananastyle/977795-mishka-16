@@ -1,4 +1,21 @@
 .catalog__wrapper {
-  padding: 30px 30px 0;
+  width: 81%;
+  margin: 0 auto;
+
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__wrapper {
+    width: 668px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 1050px;
+  }
 }

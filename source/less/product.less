@@ -38,3 +38,51 @@
 .product__button {
   display: inline-block;
 }
+
+@media (min-width: @tablet-width) {
+  .product {
+    display: flex;
+  }
+
+  .product__image {
+    width: 50%;
+  }
+
+  .product__wrapper {
+    width: 50%;
+  }
+
+  .product__title {
+    .font(bold; 20px; 24px);
+  }
+
+  .product__descriprion {
+    .font(normal; 15px; 30px);
+  }
+
+  .product__summ {
+    .font(bold);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product {
+    display: block;
+
+    margin-right: 50px;
+
+    width: 30%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .product__image {
+    width: 100%;
+  }
+
+  .product__wrapper {
+    width: 100%;
+  }
+}

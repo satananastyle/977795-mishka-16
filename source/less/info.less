@@ -3,7 +3,9 @@
 }
 
 .info__wrapper {
-  padding: 35px 30px 30px;
+  width: 81%;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .info__title {
@@ -21,4 +23,60 @@
 .info__item {
   padding-top: 57px;
   padding-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .info {
+    .font(bold; 20px; 22px);
+    margin-bottom: 60px;
+  }
+
+  .info__wrapper {
+    width: 668px;
+    padding-top: 55px;
+  }
+
+  .info__title {
+    .font(bold; 43px; 50px);
+  }
+
+  .info__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info__item {
+    width: 50%;
+
+    &--eco {
+      order: 0;
+    }
+
+    &--handmade {
+      order: 1;
+    }
+
+    &--money {
+      order: 2;
+    }
+
+    &--support {
+      order: 3;
+    }
+
+    &--like {
+      order: 4;
+    }
+
+    &--present {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info__wrapper {
+    width: 700px;
+    padding-bottom: 70px;
+  }
 }
