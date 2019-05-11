@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
   width: 100%;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 
   .font(bold; 17px; 20px);
   color: #000000;
@@ -13,12 +13,33 @@
   background-color: #ffffff;
 
   border: 2px solid #000000;
+}
 
-  &--review {
-    border: 1px solid #f9f9f9;
+.button__review {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  border: 1px solid #f9f9f9;
+  font-size: 0;
+
+  &--prev {
+    border-left: none;
+
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+  }
+
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 @media (min-width: @tablet-width) {
-  width: 50%;
+  .button__review {
+    border: none;
+  }
 }
