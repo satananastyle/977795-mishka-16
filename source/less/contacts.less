@@ -4,41 +4,58 @@
 
 .contacts__wrapper {
   position: relative;
-  width: 81%;
+  width: 320px;
   margin: 0 auto;
+  padding-top: 34px;
 }
 
 .contacts__title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 30px 26px;
 
   .font(bold; 18px; 30px);
 }
 
 .contacts__list {
   .list-style();
+  margin: 0 30px 35px;
 }
 
 .contacts__item {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 }
 
 .contacts__mail {
+  padding-left: 26px;
   color: #000000;
   text-decoration-color: #62d1ba;
 }
 
 .contacts__address {
   display: inline-block;
+
+  width: 183px;
+  padding-left: 29px;
+
   font-style: normal;
   vertical-align: top;
 }
 
 .contacts__image {
-  margin-bottom: 40px;
+  position: relative;
 
-  width: 100%;
+  width: 320px;
+  height: 457px;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.contacts__button {
+  width: 260px;
+  margin: 0 30px 40px;
 }
 
 @media (min-width: @tablet-width) {
@@ -50,27 +67,66 @@
     display: flex;
     flex-direction: column;
 
-    width: 668px;
+    width: 768px;
     margin: 0 auto;
+    padding-top: 60px;
   }
 
   .contacts__title {
+    position: relative;
+
+    margin: 0 50px 50px;
+
     .font(bold; 43px; 50px);
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 81px;
+
+      position: absolute;
+      top: -15px;
+      right: -1px;
+
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    margin: 0 50px 56px;
   }
 
   .contacts__item {
     width: 50%;
+    margin-bottom: 0;
+  }
+
+  .contacts__mail {
+    padding-left: 20px;
+  }
+
+  .contacts__address {
+    width: 255px;
+    padding-left: 22px;
+  }
+
+  .contacts__image {
+    width: 768px;
+    height: 457px;
+
+    margin: 0;
+    margin-bottom: 55px;
   }
 
   .contacts__button {
+    width: 230px;
     margin: 0 auto;
-    width: 30%;
+    margin-bottom: 56px;
   }
 }
 
@@ -79,21 +135,43 @@
     width: 1050px;
     margin: 0 auto;
     padding-left: 175px;
+    padding-top: 146px;
+  }
+
+  .contacts__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 50px;
+
+    .font(bold; 53px; 57px);
+
+    &::after {
+      top: -8px;
+      left: -107px;
+    }
   }
 
   .contacts__list {
     flex-direction: column;
+    margin: 0;
+    margin-bottom: 54px;
+  }
+
+  .contacts__item {
+    margin-bottom: 27px;
   }
 
   .contacts__image {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 73px;
+    right: -5px;
 
-    width: 50%;
+    width: 525px;
+    height: 457px;
   }
 
   .contacts__button {
     margin-left: 0;
+    margin-bottom: 100px;
   }
 }

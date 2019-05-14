@@ -1,5 +1,8 @@
 .social {
-  padding: 25px;
+  min-height: 80px;
+  padding: 28px 25px;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .social__list {
@@ -13,8 +16,31 @@
   width: 47px;
 }
 
+.social__link {
+  position: relative;
+
+  &--ig svg {
+    position: absolute;
+    top: 2px;
+    left: -3px;
+  }
+
+  &--fb svg {
+    position: absolute;
+    top: -3px;
+    left: 13px;
+  }
+
+  &--tw svg {
+    position: absolute;
+    top: 2px;
+    left: 21px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .social {
     width: 33%;
+    border: none;
   }
 }
