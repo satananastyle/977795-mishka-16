@@ -10,7 +10,7 @@
 
 .info__title {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
   padding: 0;
 
   .font(bold; 25px; 30px);
@@ -21,32 +21,103 @@
 }
 
 .info__item {
+  position: relative;
   padding-top: 57px;
-  padding-bottom: 20px;
+  padding-bottom: 26px;
+
+  &--eco::before {
+    content: "";
+    width: 34px;
+    height: 37px;
+    position: absolute;
+    top: 3px;
+    left: 9px;
+    background-image: url(../img/icon-feature-flower.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--money::before {
+    content: "";
+    width: 47px;
+    height: 27px;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    background-image: url(../img/icon-feature-money.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--like::before {
+    content: "";
+    width: 34px;
+    height: 27px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    background-image: url(../img/icon-feature-heart.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--handmade::before {
+    content: "";
+    width: 35px;
+    height: 34px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    background-image: url(../img/icon-feature-ball.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--support::before {
+    content: "";
+    width: 55px;
+    height: 24px;
+    position: absolute;
+    top: 7px;
+    left: -4px;
+    background-image: url(../img/icon-feature-rocket.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--present::before {
+    content: "";
+    width: 33px;
+    height: 32px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-image: url(../img/icon-feature-gift.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .info {
     .font(bold; 20px; 22px);
-    margin-bottom: 60px;
   }
 
   .info__wrapper {
     width: 668px;
-    padding-top: 55px;
+    padding-top: 48px;
   }
 
   .info__title {
+    margin-bottom: 45px;
+
     .font(bold; 43px; 50px);
   }
 
   .info__list {
     display: flex;
     flex-wrap: wrap;
+
+    margin-bottom: 30px;
   }
 
   .info__item {
     width: 50%;
+    padding-bottom: 54px;
 
     &--eco {
       order: 0;
@@ -77,6 +148,11 @@
 @media (min-width: @desktop-width) {
   .info__wrapper {
     width: 700px;
-    padding-bottom: 70px;
+  }
+
+  .info__title {
+    margin-bottom: 45px;
+
+    .font(bold; 53px; 57px);
   }
 }
