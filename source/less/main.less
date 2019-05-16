@@ -16,9 +16,15 @@
 .main__wrapper {
   width: 81%;
   margin: 0 auto;
+  padding-top: 24px;
 }
 
 @media (min-width: @tablet-width) {
+  .main__wrapper{
+    width: 100%;
+    padding-top: 75px;
+  }
+
   .main__item {
     margin-top: -65px;
     padding-top: 97px;
@@ -30,20 +36,18 @@
   .main__title {
     .font(bold; 43px; 50px);
   }
-
-  .main__wrapper {
-    width: 668px;
-  }
 }
 
 @media (min-width: @desktop-width) {
+  .main__wrapper {
+    width: 1200px;
+    padding-top: 123px;
+  }
+
   .main__item {
     padding-top: 95px;
     padding-bottom: 102px;
 }
-  .main__wrapper {
-    width: 1050px;
-  }
 
   .main__title {
     .font(bold; 53px; 57px);
