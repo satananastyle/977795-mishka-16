@@ -1,26 +1,35 @@
 .order__intro {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
   padding: 0;
 
   .font(normal; 13px; 24px);
 }
 
 .order__item {
-  display: flex;
-  flex-direction: column;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
   padding: 0;
 
   &--last {
-    margin-bottom: 18px;
+    margin-bottom: 13px;
+  }
+
+  &--note {
+    display: block;
+    margin-bottom: 31px;
   }
 }
 
 .order__note {
   margin: 0;
   padding: 0;
+
+  .font(normal; 14px; 16px);
+}
+
+.order__button {
+  margin-bottom: 54px;
 }
 
 @media (min-width: @tablet-width) {
@@ -31,28 +40,41 @@
   }
 
   .order__intro {
-    margin: 0 auto;
+    margin: 0 50px 5px;
 
     .font(normal; 17px; 30px);
   }
 
   .order__item {
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 100%;
+    margin-bottom: 0;
+
+    &--gray {
+      background-color: #f1f1f1;
+    }
 
     &--note {
+      width: 302px;
       margin-left: auto;
 
       order: 2;
-
-      .font(normal; 17px; 30px);
     }
   }
 
-  .order__button {
-    margin-left: 50px;
+  .order__item-wrapper {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
 
-    width: 30%;
+  .order__note {
+    padding-top: 10px;
+    .font(normal; 17px; 30px);
+  }
+
+  .order__button {
+    width: 229px;
+    margin-bottom: 50px;
 
     order: 1;
   }
@@ -61,15 +83,14 @@
 @media (min-width: @desktop-width) {
   .order__intro {
     width: 700px;
-    margin: 0 auto;
+    margin: 0 auto 6px;
+  }
+
+  .order__item-wrapper {
+    width: 700px;
   }
 
   .order__button {
     width: 230px;
-    margin-left: 175px;
-  }
-
-  .order__item {
-    padding-right: 225px;
   }
 }
