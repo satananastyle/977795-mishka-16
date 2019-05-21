@@ -76,17 +76,18 @@
 
 @media (min-width: @tablet-width) {
   .content {
-    margin-top: -65px;
+    margin-top: -64px;
+
+    border-top: 1px solid #e7e7e7;
   }
 
   .content__wrapper {
     width: 668px;
     margin: 0 auto;
-    padding-top: 155px;
+    padding-top: 152px;
 
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center 0;
-    border-top: 1px solid #e7e7e7;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/hero-tablet@2x.jpg");
@@ -95,7 +96,7 @@
   }
 
   .content__title {
-    margin: 0 auto 377px;
+    margin: 0 auto 374px;
 
     width: 500px;
 
@@ -108,10 +109,24 @@
 
   .content__item {
     width: 50%;
+    padding: 0 36px;
   }
 
   .content__link {
+    width: 100%;
+    padding: 27px 0 30px;
+
     .font(bold; 20px; 30px);
+
+    &--interior svg {
+      top: 30px;
+      right: 0;
+    }
+
+    &--toys svg {
+      top: 31px;
+      right: -4px;
+    }
   }
 }
 
