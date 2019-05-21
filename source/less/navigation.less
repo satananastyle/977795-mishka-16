@@ -1,6 +1,10 @@
 .navigation {
   width: 100%;
 
+  &--main {
+    border-top: 1px solid #ececec;
+  }
+
   &--popular {
     display: none;
   }
@@ -23,7 +27,7 @@
 .navigation__link {
   position: relative;
   display: block;
-  padding: 30px 76px;
+  padding: 27px 0 27px 76px;
 
   .font(bold);
   color: #000000;
@@ -33,7 +37,7 @@
   &--basket svg {
     position: absolute;
     top: 32px;
-    left: 30px;
+    left: 33px;
 
     opacity: 0.2;
   }
@@ -42,6 +46,10 @@
 @media (min-width: @tablet-width) {
   .navigation {
     width: 50%;
+
+    &--main {
+      border: none;
+    }
 
     &--user {
       order: -1;
