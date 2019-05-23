@@ -262,18 +262,21 @@
     <div class="modal__wrapper">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__description">Выберите размер:</p>
-      <ul class="modal__list">
-        <li>
-          <button class="modal__size" type="button">S</button>
-        </li>
-        <li>
-          <button class="modal__size" type="button">M</button>
-        </li>
-        <li>
-          <button class="modal__size" type="button">L</button>
-        </li>
-      </ul>
-      <button class="modal__button button button__modal">Добавить</button>
+      <form class="modal__list">
+        <label class="modal__label">
+          <input class="modal__input" type="radio" name="size" value="S" checked>
+          <span class="modal__radio">S</span>
+        </label>
+        <label class="modal__label">
+          <input class="modal__input" type="radio" name="size" value="M">
+          <span class="modal__radio">M</span>
+        </label>
+        <label class="modal__label">
+          <input class="modal__input" type="radio" name="size" value="L">
+          <span class="modal__radio">L</span>
+        </label>
+      <button class="modal__button button">Добавить</button>
+    </form>
     </div>
   </section>
 </body>
