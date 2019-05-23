@@ -22,6 +22,26 @@
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #ececec;
+
+  &:hover .navigation__link,
+  &:focus .navigation__link {
+    color: rgba(0, 0, 0, 0.6)
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active .navigation__link {
+    color: rgba(0, 0, 0, 0.3)
+  }
+
+  &:active path {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
 }
 
 .navigation__link {
@@ -38,8 +58,6 @@
     position: absolute;
     top: 32px;
     left: 33px;
-
-    opacity: 0.2;
   }
 }
 

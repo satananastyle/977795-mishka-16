@@ -5,8 +5,27 @@
     margin: 19px auto;
   }
 
+  &--header:hover,
+  &--header:focus {
+    opacity: 0.6;
+  }
+
+  &--header:active {
+    opacity: 0.3;
+  }
+
   &--footer {
     display: none;
+  }
+
+  &--footer:hover path,
+  &--footer:focus path{
+    fill: #46c1ae;
+  }
+
+  &--footer:active path{
+    fill: #46c1ae;
+    opacity: 0.3;
   }
 }
 

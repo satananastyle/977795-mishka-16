@@ -2,6 +2,21 @@
   display: flex;
   justify-content: space-around;
   padding: 28px 39px;
+
+
+  &:active .copyright__link{
+    opacity: 0.3;
+  }
+
+  &:hover path,
+  &:focus path{
+    fill: #46c1ae;
+  }
+
+  &:active path{
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
