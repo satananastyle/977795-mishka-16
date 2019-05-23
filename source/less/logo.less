@@ -2,11 +2,30 @@
   margin: 0 auto;
 
   &--header {
-    margin-top: 20px;
+    margin: 19px auto;
+  }
+
+  &--header:hover,
+  &--header:focus {
+    opacity: 0.6;
+  }
+
+  &--header:active {
+    opacity: 0.3;
   }
 
   &--footer {
     display: none;
+  }
+
+  &--footer:hover path,
+  &--footer:focus path {
+    fill: #46c1ae;
+  }
+
+  &--footer:active path {
+    fill: #46c1ae;
+    opacity: 0.3;
   }
 }
 
@@ -36,6 +55,7 @@
   .logo {
     &--header {
       margin-top: 10px;
+      margin-bottom: 0;
 
       order: -1;
     }

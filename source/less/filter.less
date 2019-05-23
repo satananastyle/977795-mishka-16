@@ -68,6 +68,15 @@
   &--textarea {
     margin: 0;
   }
+
+  &:hover path,
+  &:focus path {
+    fill: #62d1ba;
+  }
+
+  &:active path {
+    fill: #62d1ba;
+  }
 }
 
 .filter__input {
@@ -152,6 +161,8 @@
   border-left: none;
   border-bottom: 2px solid #000000;
 
+  color: #000000;
+
   &::-webkit-input-placeholder {
     .font(normal; 17px; 18px);
     color: rgba(68, 68, 68, 0.3);
@@ -161,6 +172,15 @@
     .font(normal; 19px; 18px);
     color: rgba(68, 68, 68, 0.3);
   }
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 .filter__textarea {
@@ -169,9 +189,20 @@
 
   border: 2px solid #000000;
 
+  color: #000000;
+
   &::-webkit-input-placeholder {
     .font(normal; 17px; 18px);
     color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
   }
 }
 

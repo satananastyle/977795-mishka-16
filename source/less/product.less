@@ -2,6 +2,15 @@
   margin: 0 auto 31px;
 
   border: 1px solid #ededed;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 10px -5px #444444;
+  }
+
+  &:active {
+    box-shadow: 0 10px 10px -10px #444444;
+  }
 }
 
 .product__wrapper {
@@ -9,7 +18,7 @@
   flex-wrap: wrap;
 
   width: 205px;
-  margin: 22px auto 25px;
+  margin: 25px auto;
 
   text-align: left;
 }
@@ -19,11 +28,25 @@
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
+}
 
+.product__link {
   .font(bold);
+  color: #000000;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .product__image {
+  display: block;
   width: 260px;
   height: 195px;
 }
@@ -63,6 +86,17 @@
 
   width: 50%;
   margin: 0;
+
+  &:hover path,
+  &:focus path {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active path {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
 }
 
 .product__button svg {
