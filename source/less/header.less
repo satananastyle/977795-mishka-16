@@ -24,13 +24,13 @@
 }
 
 .header--closed .header__toggle {
-  background-image: url(../img/icon-menu-open.svg);
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .header--opened .header__toggle {
-  background-image: url(../img/icon-menu-close.svg);
+  background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -41,16 +41,12 @@
     display: none;
   }
 
-  .header--closed .navigation {
-    display: none;
-  }
-
   .header--nojs .header__toggle {
     display: none;
   }
 
   .header--nojs .navigation--main,
-  .header--nojs .navigation--user{
+  .header--nojs .navigation--user {
     display: block;
   }
 }
