@@ -51,12 +51,24 @@
   vertical-align: top;
 }
 
-.contacts__image {
-  width: 320px;
-  height: 457px;
+.contacts__map {
+  position: relative;
+  z-index: 3;
+
+  border: none;
 
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.contacts__image {
+  position: absolute;
+  top: 306px;
+  left: 0;
+  z-index: 1;
+
+  width: 320px;
+  height: 457px;
 
   text-align: center;
 }
@@ -65,6 +77,8 @@
   position: absolute;
   top: 453px;
   right: 114px;
+
+  z-index: 2;
 }
 
 .contacts__button {
@@ -134,12 +148,19 @@
     padding-left: 22px;
   }
 
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+
+    margin-bottom: 55px;
+  }
+
   .contacts__image {
+    top: 324px;
     width: 768px;
     height: 457px;
 
     margin: 0;
-    margin-bottom: 44px;
   }
 
   .contacts__pin {
@@ -186,10 +207,19 @@
     margin-bottom: 27px;
   }
 
-  .contacts__image {
+  .contacts__map {
     position: absolute;
     top: 94px;
     right: 0;
+
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__image {
+    position: absolute;
+    top: 94px;
+    left: 525px;
 
     width: 525px;
     height: 457px;

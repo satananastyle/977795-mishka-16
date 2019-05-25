@@ -1,7 +1,6 @@
 var header = document.querySelector('.header');
 var headToggle = document.querySelector('.header__toggle');
 
-
 header.classList.remove('header--nojs');
 
 headToggle.addEventListener('click', function() {

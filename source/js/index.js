@@ -25,13 +25,11 @@ hitButton.addEventListener("click", function (evt) {
   overlay.classList.add("overlay--show");
 });
 
-
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   size.classList.remove("modal--show");
   overlay.classList.remove("overlay--show");
 });
-
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

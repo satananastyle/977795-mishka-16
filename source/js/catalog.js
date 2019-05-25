@@ -19,7 +19,6 @@ headToggle.addEventListener('click', function() {
   }
 });
 
-
 productButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   size.classList.add("modal--show");
