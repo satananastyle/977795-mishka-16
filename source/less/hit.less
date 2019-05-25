@@ -1,5 +1,11 @@
 .hit {
+  position: relative;
+
   background-color: #ffffff;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: bottom left;
 
   .font(normal; 15px; 24px);
 }
@@ -9,7 +15,7 @@
 
   width: 260px;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 27px;
 }
 
 .hit__title {
@@ -50,6 +56,10 @@
 .hit__characteristic td {
   padding: 10px 0;
   border-bottom: 1px solid #ececec;
+
+  &:nth-child(2n) {
+    padding-left: 17px;
+  }
 }
 
 .hit__image {
@@ -78,22 +88,32 @@
 
 @media (min-width: @tablet-width) {
   .hit {
+    margin-top: -12px;
+
     .font(normal; 17px; 30px);
+
+    background-color: transparent;
+    background-image: url("../img/bg-zigzag-fill.svg"),
+      url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: top, center bottom;
   }
 
   .hit__wrapper {
     width: 668px;
-    padding-top: 45px;
+    padding-top: 60px;
   }
 
   .hit__title {
     margin-bottom: 50px;
+    margin-left: -3px;
     .font(bold; 43px; 50px);
   }
 
   .hit__lider {
     position: absolute;
-    top: 56px;
+    top: 72px;
     right: 26px;
 
     width: 72px;
@@ -110,14 +130,22 @@
   }
 
   .hit__characteristic {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
 
     width: 291px;
   }
 
+  .hit__characteristic td {
+    padding: 10px 0 9px;
+
+    &:nth-child(2n) {
+      padding-left: 0;
+    }
+  }
+
   .hit__image {
     position: absolute;
-    top: 153px;
+    top: 167px;
     right: 0;
 
     width: 334px;
@@ -147,15 +175,21 @@
 }
 
 @media (min-width: @desktop-width) {
+  .hit {
+    margin-top: -19px;
+
+    background-repeat: no-repeat;
+  }
+
   .hit__wrapper {
     width: 700px;
-    padding-top: 130px;
+    padding-top: 149px;
   }
 
   .hit__title {
     position: absolute;
-    top: 130px;
-    left: -5px;
+    top: 146px;
+    left: -2px;
 
     .font(bold; 53px; 57px);
 
@@ -164,14 +198,14 @@
 
   .hit__lider {
     position: absolute;
-    top: 145px;
+    top: 161px;
     left: -130px;
   }
 
   .hit__description {
     width: 293px;
     margin-top: 104px;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 
   .hit__characteristic {
@@ -186,7 +220,7 @@
 
   .hit__image {
     position: absolute;
-    top: 76px;
+    top: 94px;
     right: -175px;
 
     width: 525px;

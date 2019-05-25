@@ -29,6 +29,16 @@
   padding-left: 26px;
   color: #000000;
   text-decoration-color: #62d1ba;
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 .contacts__address {
@@ -41,16 +51,34 @@
   vertical-align: top;
 }
 
-.contacts__image {
+.contacts__map {
   position: relative;
+  z-index: 3;
+
+  border: none;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.contacts__image {
+  position: absolute;
+  top: 306px;
+  left: 0;
+  z-index: 1;
 
   width: 320px;
   height: 457px;
 
-  margin: 0 auto;
-  margin-bottom: 30px;
-
   text-align: center;
+}
+
+.contacts__pin {
+  position: absolute;
+  top: 453px;
+  right: 114px;
+
+  z-index: 2;
 }
 
 .contacts__button {
@@ -60,6 +88,11 @@
 
 @media (min-width: @tablet-width) {
   .contacts {
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: top;
+
     .font(normal; 17px; 30px);
   }
 
@@ -69,13 +102,13 @@
 
     width: 768px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 77px;
   }
 
   .contacts__title {
     position: relative;
 
-    margin: 0 50px 50px;
+    margin: 0 50px 50px 47px;
 
     .font(bold; 43px; 50px);
 
@@ -115,12 +148,24 @@
     padding-left: 22px;
   }
 
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+
+    margin-bottom: 55px;
+  }
+
   .contacts__image {
+    top: 324px;
     width: 768px;
     height: 457px;
 
     margin: 0;
-    margin-bottom: 55px;
+  }
+
+  .contacts__pin {
+    top: 461px;
+    right: 338px;
   }
 
   .contacts__button {
@@ -135,13 +180,14 @@
     width: 1050px;
     margin: 0 auto;
     padding-left: 175px;
-    padding-top: 146px;
+    padding-top: 165px;
   }
 
   .contacts__title {
     position: relative;
     margin: 0;
     margin-bottom: 50px;
+    margin-left: -6px;
 
     .font(bold; 53px; 57px);
 
@@ -161,17 +207,31 @@
     margin-bottom: 27px;
   }
 
-  .contacts__image {
+  .contacts__map {
     position: absolute;
-    top: 73px;
-    right: -5px;
+    top: 94px;
+    right: 0;
 
     width: 525px;
     height: 457px;
   }
 
+  .contacts__image {
+    position: absolute;
+    top: 94px;
+    left: 525px;
+
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__pin {
+    top: 240px;
+    right: 220px;
+  }
+
   .contacts__button {
     margin-left: 0;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
   }
 }

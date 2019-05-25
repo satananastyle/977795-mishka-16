@@ -1,0 +1,138 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 25%;
+
+  width: 100%;
+  z-index: 11;
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  border: 1px solid #c7c7c7;
+  background-color: #ffffff;
+
+  box-shadow: 0 10px 15px 0 gray;
+}
+
+.modal__title {
+  width: 148px;
+  margin: 0 auto 13px;
+  text-align: center;
+
+  .font(bold; 25px; 30px);
+  text-transform: uppercase;
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+
+  .font(normal; 15px; 30px);
+  text-align: center;
+}
+
+.modal__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 260px;
+  margin: 0 auto;
+}
+
+.modal__label {
+  width: 82px;
+
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.modal__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.modal__radio {
+  display: block;
+  width: 82px;
+  padding: 16px 0;
+  margin-bottom: 32px;
+
+  border: 2px solid #ececec;
+
+  .font(bold; 17px; 16px);
+  text-align: center;
+}
+
+.modal__input:hover + .modal__radio,
+.modal__input:focus + .modal__radio {
+  border-color: #c7c7c7;
+}
+
+.modal__input:active + .modal__radio {
+  border-color: #62d1ba;
+}
+
+.modal__input:checked + .modal__radio {
+  border-color: #62d1ba;
+}
+
+.modal__button {
+  margin-bottom: 47px;
+  background-color: #63d1bb;
+  border-color: #63d1bb;
+
+  color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__wrapper {
+    width: 567px;
+    padding-top: 33px;
+  }
+
+  .modal__title {
+    width: 355px;
+    margin-bottom: 15px;
+
+    .font(bold; 30px; 57px);
+    text-transform: uppercase;
+  }
+
+  .modal__description {
+    .font(normal; 17px; 30px);
+    margin-bottom: 20px;
+  }
+
+  .modal__list {
+    width: 351px;
+    margin: 0 auto 34px;
+  }
+
+  .modal__label {
+    width: 112px;
+  }
+
+  .modal__radio {
+    width: 112px;
+  }
+
+  .modal__button {
+    display: block;
+    width: 351px;
+    margin: 0 auto 13px;
+  }
+}

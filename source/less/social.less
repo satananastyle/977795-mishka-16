@@ -36,11 +36,29 @@
     top: 2px;
     left: 21px;
   }
+
+  &:hover path,
+  &:focus path {
+    fill: #46c1ae;
+  }
+
+  &:active path {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .social {
     width: 33%;
+    padding: 25px;
+
     border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    padding: 23px 25px;
   }
 }
