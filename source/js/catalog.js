@@ -1,7 +1,7 @@
 var header = document.querySelector('.header');
 var headToggle = document.querySelector('.header__toggle');
 
-var productButton = document.querySelector(".product__button");
+var allProductButton = document.querySelectorAll(".product__button");
 
 var size = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay")
@@ -19,11 +19,14 @@ headToggle.addEventListener('click', function() {
   }
 });
 
-productButton.addEventListener("click", function (evt) {
+for (var i=0; i < allProductButton.length; i++) {
+  var productButton = allProductButton[i]
+  productButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   size.classList.add("modal--show");
   overlay.classList.add("overlay--show");
 });
+}
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
