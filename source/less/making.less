@@ -8,6 +8,15 @@
   margin: 0 auto;
 
   border: 1px solid #ededed;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 10px -5px #444444;
+  }
+
+  &:active {
+    box-shadow: 0 10px 10px -10px #444444;
+  }
 }
 
 .making__title {
@@ -52,6 +61,16 @@
   background: none;
 
   font-size: 0;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
 }
 
 .making__item {
@@ -128,7 +147,7 @@
 
 @media (min-width: @desktop-width) {
   .making {
-    margin-bottom: 103px;
+    margin-bottom: 109px;
   }
 
   .making__wrapper {
@@ -140,6 +159,8 @@
 
   .making__video {
     position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .making__image {

@@ -1,16 +1,22 @@
 .review {
   .font(normal; 15px; 30px);
+
+  background-color: #ffffff;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: bottom left;
 }
 
 .review__wrapper {
   width: 260px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 29px;
 }
 
 .review__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding: 0;
 
   .font(bold; 25px; 30px);
@@ -18,7 +24,7 @@
 
 .review__item {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding: 0;
 }
 
@@ -63,6 +69,11 @@
     background-repeat: no-repeat;
 
     .font(normal; 17px; 30px);
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 352px auto;
+    }
   }
 
   .review__wrapper {
@@ -71,17 +82,22 @@
     justify-content: space-between;
 
     width: 668px;
-    padding-top: 77px;
-    margin-bottom: 86px;
+    padding-top: 80px;
+    margin-bottom: 69px;
   }
 
   .review__title {
+    margin-left: -4px;
     order: -2;
     .font(bold; 43px; 50px);
   }
 
   .review__item {
-    margin-bottom: 52px;
+    margin-bottom: 55px;
+  }
+
+  .review__author-name {
+    .font(bold; 18px; 24px);
   }
 
   .review__sign {
@@ -93,6 +109,7 @@
   }
 
   .review__letter {
+    margin-bottom: 46px;
     width: 175px;
     order: -1;
   }
@@ -105,7 +122,7 @@
 
   .review__wrapper {
     width: 1050px;
-    margin-bottom: 95px;
+    margin-bottom: 70px;
     padding-left: 175px;
 
     background-image: url("../img/review@1x.jpg");
@@ -113,6 +130,7 @@
   }
 
   .review__title {
+    margin-top: -9px;
     .font(bold; 53px; 57px);
   }
 
@@ -122,5 +140,9 @@
 
   .review__sign {
     margin-bottom: 90px;
+  }
+
+  .review__letter {
+    margin-bottom: 44px;
   }
 }
