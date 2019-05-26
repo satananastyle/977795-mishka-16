@@ -18,17 +18,16 @@ var include = require("posthtml-include");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
+  .pipe(plumber())
+  .pipe(sourcemap.init())
+  .pipe(less())
+  .pipe(postcss([
+    autoprefixer()
+  ]))
+  .pipe(csso())
+  .pipe(rename("style.min.css"))
+  .pipe(sourcemap.write("."))
+  .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("html", function () {
@@ -38,7 +37,6 @@ gulp.task("html", function () {
      ]))
      .pipe(gulp.dest("build"));
 });
-
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
