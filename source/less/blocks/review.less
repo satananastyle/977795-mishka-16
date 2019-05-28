@@ -72,7 +72,7 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/review@2x.jpg");
-      background-size: 352px auto;
+      background-size: contain;
     }
   }
 
@@ -80,6 +80,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+
 
     width: 668px;
     padding-top: 80px;
@@ -87,6 +89,7 @@
   }
 
   .review__title {
+    width: 50%;
     margin-left: -4px;
     order: -2;
     .font(bold; 43px; 50px);
@@ -97,10 +100,12 @@
   }
 
   .review__author-name {
+    width: 50%;
     .font(bold; 18px; 24px);
   }
 
   .review__sign {
+    width: 50%;
     margin-bottom: 45px;
   }
 
@@ -127,6 +132,11 @@
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: contain;
+    }
   }
 
   .review__title {
